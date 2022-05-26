@@ -119,5 +119,10 @@ database = {
         "device" : "Redmi K20 Pro / MI 9T Pro",
         "maintainer" : "@laz_man",
         "sgroup" : "https://t.me/genhode",
+    },
+    "alioth" : {
+        "device" : "Poco F3 / Mi 11x / Redmi K40",
+        "maintainer" : "@AbrarNoob",
+        "sgroup" : "https://t.me/carrotgardenalioth",
     }
 }
