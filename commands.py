@@ -216,7 +216,7 @@ Status : Uploading...📤
 Size : {size}
 Target : 🌐 <a href="{target_url}">projectblaze/{codename}</a> 🌐
 '''
-    await context.bot.edit_message_text(chat_id=chat_id, message_id=mess_id, text=mess2, parse_mode='HTML', disable_web_page_preview=True)
+    await context.bot.edit_message_text(chat_id=chat_id, message_id=bmess_id, text=mess2, parse_mode='HTML', disable_web_page_preview=True)
     with pysftp.Connection('frs.sourceforge.net', username='ganesh314159', password=sfpass, cnopts=cnopts) as sftp:
         with sftp.cd(f'/home/frs/project/projectblaze/{codename}'):
             sftp.put(f'{file_path}')
@@ -226,7 +226,7 @@ Status : Uploaded✅
 Target : 🌐 <a href="{target_url}">projectblaze/{codename}</a> 🌐
 '''
     os.remove(f'temp/{name}')
-    await context.bot.edit_message_text(chat_id=chat_id, message_id=mess_id, text=mess3, parse_mode='HTML', disable_web_page_preview=True)
+    await context.bot.edit_message_text(chat_id=chat_id, message_id=bmess_id, text=mess3, parse_mode='HTML', disable_web_page_preview=True)
 
 
 async def test(update: Update, context: CallbackContext.DEFAULT_TYPE):
