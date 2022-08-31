@@ -1,13 +1,10 @@
 import requests
-import ast
 from datetime import date
 base_url = "https://api.telegram.org/bot{BOTAPIHERE}/" # Used To Control Bot Via Telegram Bot API
 def sendPost(codeName): # Used To Generate Rom Post
     today = date.today() # Fetches Date From System
     buildDate = today.strftime("%b-%d-%Y") # Modifies Date In Required Format
-    database = requests.get("{Get Your Official device.json and Paste Link Here}") # Check ProjectBlaze device.json for reference
-    data = database.text # Convert Returned Response To String
-    res = ast.literal_eval(data) # Convert String To Dictionary
+    res = requests.get("{Get Your Official device.json and Paste Link Here}").json() # Check ProjectBlaze device.json for reference
     banner = open("images/pic.png", "rb") # Opens Banner Image
     parameters = {
         "chat_id" : "{CHATID}",  # Use getUpdates to obtain chat_id of group
