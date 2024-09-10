@@ -114,7 +114,7 @@ async def post(update: Update, context: CallbackContext.DEFAULT_TYPE):
     year = current_time.year
     date = f" {month}-{day}-{year} "
     mess = post_message(codename, database, date, dclog)
-    await context.bot.send_photo(CHAT_ID, photo=open('images/Blaze3.7.png', 'rb'), caption=mess, reply_to_message_id=mess_id, parse_mode='HTML')
+    await context.bot.send_photo(CHAT_ID, photo=open('images/Blaze3.8.png', 'rb'), caption=mess, reply_to_message_id=mess_id, parse_mode='HTML')
 
 # Upload command
 async def upload(update: Update, context: CallbackContext.DEFAULT_TYPE):
