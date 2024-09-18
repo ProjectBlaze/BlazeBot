@@ -27,8 +27,8 @@ database = {
     },
     "lavender" : {
         "device" : "Redmi Note 7/7s",
-        "maintainer" : "@AlCoptan99",
-        "sgroup" : "https://t.me/coptan_s_projects",
+        "maintainer" : "@rgb_tilt",
+        "sgroup" : "https://t.me/RedmiNote7Official",
     },
     "Mi439" : {
         "device" : "Mi439",
